@@ -95,35 +95,36 @@ Diesel: 0
 
 //continue a solução
 
-let alcohol = 1;
-let gasoline = 2;
+let alcohol = 0;
+let gasoline = 0;
 let diesel = 0;
-let fim = 0;
+let x = true;
 
-while (false) {
-  const code = Number(lines.shift());
+while (x) {
+  const code = Number(gets());
   
   switch (code) {
     case 1:
-      console.log( "alcohol");
+      alcohol ++;
       
       break;
     case 2:
-      console.log( "gasoline");
+     gasoline ++;
 
       break;
     case 3:
-      console.log(  "diesel");
+      diesel ++;
   
       break;
     case 4:
-      console.log("fim");
+      x= false;
       
       break;
   }
-}
+} 
+
 
 console.log("MUITO OBRIGADO");
-console.log("Alcool: " + alcohol);
-console.log("Gasolina: "+ gasoline);
+console.log("Alcool: "  + alcohol);
+console.log("Gasolina: "+ gasoline );
 console.log("Diesel: " + diesel);
